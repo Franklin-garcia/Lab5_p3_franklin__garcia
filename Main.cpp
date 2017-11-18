@@ -12,9 +12,11 @@
 #include "Defensivos.h"
 #include <vector>
 #include <string>
+#include <fstream>
+
 using namespace std;
 
-//void escribir(vector,vector,vector,vector);
+void es(vector<Agua>,vector<Fuego>,vector<Tierra>,vector<Aire>);
 
 int main(){
 bool seguir=true;
@@ -526,16 +528,16 @@ return 0;
 
 
 
-/*void escribir(vector v1,vector v2,vector v3, vector v4){//escribir texto
+void es(vector<Agua> v1,vector<Fuego> v2,vector<Tierra> v3, vector<Aire> v4){//escribir texto
         ofstream archivo;
         archivo.open("prueba.txt",ios::out);//Abriendo o creando el archivo
         if(archivo.fail()){
                 cout<<"Hubo un error";
         }
-        archivo<<v1;
+        /*archivo<<v1;
         archivo<<v2;
         archivo<<v3;
-        archivo<<v4;
-        cout<<"creado"
+        archivo<<v4;*/
+        cout<<"creado";
         archivo.close();
-}*/
+}
